@@ -136,6 +136,10 @@
   padding: 0;
 }
 
+.tabelaMes tr td:nth-child(2) {
+  border-left: 0.0625rem solid #555;
+}
+
 .titulo {
   display: flex;
   justify-content: center;
@@ -162,9 +166,9 @@
   line-height: normal;
   padding: 0.625rem 1.25rem;
   background-color: transparent;
-  border-right: 0.0625rem solid #555;
   height: 100%;
   display: flex;
+  margin-top: 0.4rem;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;

@@ -14,7 +14,7 @@ const TabelaMes: React.FC = () => {
       <table className={styles.tabelaMes}>
         <tbody>
           <tr>
-            <td className={styles.nomeM}>Mês </td>
+            <td className={styles.nomeM}>Mês</td>
             <td>
               <input
                 type="text"
@@ -35,4 +35,4 @@ const TabelaMes: React.FC = () => {
   );
 }
 
-export default TabelaMes; // <--- Exporta o componente
+export default TabelaMes;

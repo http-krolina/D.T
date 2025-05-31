@@ -1,4 +1,3 @@
-// src/components/PasswordRecovery/Step1.jsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./RecSenha.module.css";
@@ -8,29 +7,19 @@ function RecSenha() {
   const [matricula, setMatricula] = useState("");
   const navigate = useNavigate();
 
-  const togglePassword = (id) => {
-    const input = document.getElementById(id);
-    if (input) {
-      input.type = input.type === "password" ? "text" : "password";
-    }
-  };
-
   const handleCancel = () => {
-    navigate("/"); 
+    navigate("/");
   };
 
   const handleRecover = () => {
-    
     if (cpf && matricula) {
-     
-      navigate("./Confirmar-Senha"); 
+      navigate("./Confirmar-Senha");
     } else {
       alert("Por favor, preencha o CPF e a Matrícula.");
     }
   };
 
   return (
-    
     <section className={styles.section2}>
       <div className={styles.div1sec2}>
         <h2>Recupere a sua senha:</h2>

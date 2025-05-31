@@ -23,27 +23,27 @@
 
 .menuInicial {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente (opcional) */
-  gap: 0.625rem; /* 10px convertido para rem */
-  width: 100%; /* Ocupa toda a largura disponível */
+  justify-content: center; 
+  align-items: center; 
+  gap: 0.625rem; 
+  width: 100%; 
 
   margin-left: -20rem;
   margin-right: 2rem;
 }
 
 .menuButtonDesativado {
-  padding: 10px 30px; /* Aumentei o padding horizontal */
+  padding: 10px 30px; 
   background-color: #f0f0f0;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s;
-  min-width: 150px; /* Largura mínima para uniformidade */
+  min-width: 150px; 
   text-align: center;
 
-  text-decoration: none; /* Remove sublinhado */
+  text-decoration: none; 
   display: inline-block;
 
   border-radius: 10px;

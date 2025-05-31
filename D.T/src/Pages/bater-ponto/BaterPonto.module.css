@@ -395,11 +395,19 @@
   align-items: flex-start;
 }
 
+
+.solicitarAjusteLinkWrapper {
+  text-decoration: none; 
+  display: block; 
+  margin-top: -0.989rem;
+  width: 19.625rem; 
+  height: 3.125rem;
+}
+
 .solicitarAjusteButton {
   display: flex;
-  margin-top: -0.989rem;
-  width: 19.625rem;
-  height: 3.125rem;
+  width: 100%;
+  height: 100%;
   padding: 0.6875rem 7.4375rem;
   justify-content: center;
   align-items: center;
@@ -414,8 +422,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-decoration: none;
-  display: inline-block;
+  cursor: pointer;
 }
 
 .localizacaoBox {

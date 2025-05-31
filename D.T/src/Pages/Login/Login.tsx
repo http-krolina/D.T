@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Login.module.css";
-import Fundo from "../../assets/Fundo.png"; // Importação da imagem de fundo
+import Fundo from "../../assets/Fundo.png"; 
 
 const Login: React.FC = () => {
-  // Tipando o estado showPassword como boolean
   const [showPassword, setShowPassword] = useState<boolean>(false);
 
   return (
@@ -28,7 +27,6 @@ const Login: React.FC = () => {
             id="email"
             className={styles.inputField}
             placeholder="Digite o seu E-mail"
-            // Você pode adicionar um estado para o email aqui se ele for manipulado
           />
         </div>
 
@@ -42,7 +40,7 @@ const Login: React.FC = () => {
               id="password"
               className={styles.inputField}
               placeholder="Digite a sua senha"
-              // Você pode adicionar um estado para a senha aqui se ela for manipulada
+
             />
             <span
               className={styles.toggleVisibility}
@@ -55,9 +53,9 @@ const Login: React.FC = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2" // Adicionado para consistência de estilo SVG
-                  strokeLinecap="round" // Adicionado para consistência de estilo SVG
-                  strokeLinejoin="round" // Adicionado para consistência de estilo SVG
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" />
                   <line x1="1" y1="1" x2="23" y2="23" />
@@ -69,9 +67,9 @@ const Login: React.FC = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2" // Adicionado para consistência de estilo SVG
-                  strokeLinecap="round" // Adicionado para consistência de estilo SVG
-                  strokeLinejoin="round" // Adicionado para consistência de estilo SVG
+                  strokeWidth="2"
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
                 >
                   <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
                   <circle cx="12" cy="12" r="3" />
@@ -85,7 +83,7 @@ const Login: React.FC = () => {
           Esqueceu a senha?
         </Link>
 
-        {/* Idealmente, este Link levaria a uma função de login real */}
+        
         <Link
           to="/pagina-inicial"
           className={`${styles.button} ${styles.primaryButton}`}

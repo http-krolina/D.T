@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import styles from "./ConfirmarCorrecao.module.css"; // Note que o estilo original era BaterPonto.module.css, mas usei ConfirmarCorrecao para consistência
+import styles from "./ConfirmarCorrecao.module.css"; 
 import Logo from "../../assets/LOGO1.png";
 import { Footer } from "../../components/Footer/Footer";
 import IconeEntrada from "../../assets/entrada.png";

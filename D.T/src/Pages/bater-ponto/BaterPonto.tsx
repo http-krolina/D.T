@@ -185,9 +185,11 @@ const BaterPonto: React.FC = () => {
             </div>
           </div>
 
-          <Link to="/confirmar-correcao">
-            <button className={styles.solicitarAjusteButton}>SOLICITAR</button>
-          </Link>
+          <div>
+  <Link to="/confirmar-correcao" className={styles.solicitarAjusteLinkWrapper}>
+    <button className={styles.solicitarAjusteButton}>SOLICITAR</button>
+  </Link>
+</div>
         </div>
 
         <div className={styles.localizacaoBox}>

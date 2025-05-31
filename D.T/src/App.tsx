@@ -7,7 +7,7 @@ import RecSenha from "./Pages/recuperar-senha/RecSenha";
 import BaterPonto from "./Pages/bater-ponto/BaterPonto";
 import ConfirmarCorrecao from "./Pages/confirmar-correcao/ConfirmarCorrecao";
 import styles from "./App.module.css"; 
-import ConfirmarSenha from "./pages/confirmar-senha/ConfirmarSenha";
+import ConfirmarSenha from "./Pages/confirmar-senha/ConfirmarSenha";
 
 function App() {
   return (

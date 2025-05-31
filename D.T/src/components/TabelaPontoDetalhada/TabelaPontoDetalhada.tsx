@@ -1,15 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './TabelaPonto.module.css';
 
-// Tipamos o componente funcional usando React.FC.
-// Como este componente não recebe props, não precisamos especificar um tipo genérico para React.FC.
 const TabelaPontoDetalhada: React.FC = () => {
+  const [dataHoraAtual, setDataHoraAtual] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setDataHoraAtual(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const formatarData = (date: Date): string => {
+    const dia = String(date.getDate()).padStart(2, '0');
+    const mes = String(date.getMonth() + 1).padStart(2, '0');
+    const ano = date.getFullYear();
+    return `${dia}/${mes}/${ano}`;
+  };
+
+  const formatarHora = (date: Date): string => {
+    const horas = String(date.getHours()).padStart(2, '0');
+    const minutos = String(date.getMinutes()).padStart(2, '0');
+    const segundos = String(date.getSeconds()).padStart(2, '0');
+    return `${horas}:${minutos}:${segundos}`;
+  };
+
   return (
     <div className={styles.blocoCartaoPonto}>
       <div className={styles.cardPontoDetalhes}>
         <div className={styles.cardPontoHeader}>
-          <p>EMISSÃO: 12/05/2025</p>
-          <p>19:03:05</p>
+          <p>EMISSÃO: {formatarData(dataHoraAtual)}</p>
+          <p>{formatarHora(dataHoraAtual)}</p>
         </div>
         <p className={styles.cardPontoTitle}>CARTÃO DE PONTO</p>
         <p className={styles.cardPontoInfo}>

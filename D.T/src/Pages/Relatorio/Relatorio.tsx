@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import styles from "./Relatorio.module.css";
-import Logo from "../../assets/LOGO1.png"; // Ajuste o caminho conforme necessário
+import Logo from "../../assets/LOGO1.png"; 
 import { Footer } from "../../components/Footer/Footer";
 import TabelaMes from "../../components/TabelaMes/TabelaMes";
-import TabelaPontoDetalhada from "../../components/TabelaPontoDetalhada/TabelaPontoDetalhada"; // <--- Mantenha esta importação
+import TabelaPontoDetalhada from "../../components/TabelaPontoDetalhada/TabelaPontoDetalhada"; 
 
 const Relatorio = () => {
   return (

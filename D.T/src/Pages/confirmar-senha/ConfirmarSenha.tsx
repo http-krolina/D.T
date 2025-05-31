@@ -3,15 +3,13 @@ import { useNavigate } from "react-router-dom";
 import styles from "./ConfirmarSenha.module.css";
 
 const ConfirmarSenha: React.FC = () => {
-  // Tipando o estado para strings
   const [senha, setSenha] = useState<string>("");
   const [senhaConfirmacao, setSenhaConfirmacao] = useState<string>("");
 
   const navigate = useNavigate();
 
-  // Tipando o parâmetro 'id' como string
+  
   const togglePassword = (id: string) => {
-    // Usamos 'as HTMLInputElement' para informar ao TypeScript que 'input' será um elemento HTMLInputElement
     const input = document.getElementById(id) as HTMLInputElement | null;
     if (input) {
       input.type = input.type === "password" ? "text" : "password";
@@ -23,11 +21,9 @@ const ConfirmarSenha: React.FC = () => {
   };
 
   const handleRecover = () => {
-    // Aqui você adicionaria a lógica para de fato recuperar/redefinir a senha.
-    // Por exemplo, validar se as senhas são iguais e chamar uma API.
     if (senha === senhaConfirmacao) {
       console.log("Senhas correspondem. Processando recuperação...");
-      navigate("/pagina-inicial"); // Redireciona após a "recuperação"
+      navigate("/pagina-inicial"); 
     } else {
       console.error("As senhas não correspondem!");
       alert("As senhas digitadas não correspondem. Por favor, tente novamente.");
@@ -48,9 +44,9 @@ const ConfirmarSenha: React.FC = () => {
             placeholder="Digite sua senha"
             className={styles.inputstyle}
             type="password"
-            id="senha" // ID para o togglePassword
+            id="senha" 
             value={senha}
-            // Tipando o evento de mudança para input HTML
+    
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSenha(e.target.value)}
           />
           <img
@@ -70,9 +66,9 @@ const ConfirmarSenha: React.FC = () => {
             placeholder="Digite novamente sua senha"
             className={styles.inputstyle}
             type="password"
-            id="senhaConfirmacao" // ID para o togglePassword
+            id="senhaConfirmacao" 
             value={senhaConfirmacao}
-            // Tipando o evento de mudança para input HTML
+            
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSenhaConfirmacao(e.target.value)}
           />
           <img

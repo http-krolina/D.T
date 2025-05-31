@@ -39,7 +39,7 @@ const Cadastro: React.FC = () => {
     }));
   };
 
-  // Tipando o parâmetro 'id' como string
+  
   const togglePassword = (id: string) => {
     const input = document.getElementById(id) as HTMLInputElement | null;
     if (input) {
@@ -50,11 +50,10 @@ const Cadastro: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Verificação de senha conforme a const que você forneceu
+    
     if (formData.senha === formData.confirmarSenha) {
       console.log("Cadastro realizado com sucesso!", formData);
-      // Aqui você pode adicionar a lógica para enviar os dados para o servidor
-      navigate("/"); // Redireciona após o cadastro
+      navigate("/");
     } else {
       console.error("As senhas não correspondem!");
       alert(

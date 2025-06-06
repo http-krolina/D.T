@@ -7,17 +7,26 @@
 Sistema de registro de ponto eletrônico desenvolvido com React, TypeScript e Vite, oferecendo:
 
 Registro de jornada de trabalho
+
 Gestão de relatórios
+
 Solicitação de abonos
+
 Recuperação de senha
+
 
 ## 🚀 Tecnologias Utilizadas
 
 React
+
 TypeScript
+
 Vite
+
 React Router
+
 CSS Modules
+
 
 ## 📌 Funcionalidades
 
@@ -29,12 +38,14 @@ CSS Modules
 
 ✏️ Solicitação de abonos
 
+
 ## <span style="font-size: 24px">🚀 COMO RODAR</span>
 
 ```bash
 npm install
 npm run dev
 ```
+
 
 
 

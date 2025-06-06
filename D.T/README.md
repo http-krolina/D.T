@@ -1,8 +1,8 @@
 # DoT
 
-![Logo do Projeto](LOGO1.png)
+![Logo do Projeto](/D.T/./src/assets/LOGO1.png)
 
-# 📋 - Sistema de Ponto D.T
+## 📋 - Sistema de Ponto D.T
 
 Sistema de registro de ponto eletrônico desenvolvido com React, TypeScript e Vite, oferecendo:
 

@@ -10,15 +10,6 @@ Solicitação de abonos
 Recuperação de senha
 
 
-🚀 Como rodar
-
-```bash
-git clone https://github.com/http-krolina/D.T.git
-cd D.T
-npm install
-npm run dev
-
-
 📌 Funcionalidades:
 
 ✅ Login e autenticação
@@ -34,3 +25,7 @@ TypeScript
 Vite
 React Router
 CSS Modules
+
+
+
+
